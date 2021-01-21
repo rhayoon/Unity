@@ -1,10 +1,10 @@
 
-=== Sat Jan  9 22:57:12 2021
+=== Wed Dec 23 20:01:34 2020
 
 Packages were changed.
-Update Mode: resetToDefaultDependencies
+Update Mode: mergeDefaultDependencies
 
-The following packages were 추가됨:
+The following packages were added:
   com.unity.collab-proxy@1.2.16
   com.unity.ide.rider@1.1.4
   com.unity.ide.vscode@1.2.3
@@ -43,3 +43,8 @@ The following packages were 추가됨:
   com.unity.textmeshpro@2.1.1
   com.unity.timeline@1.2.17
   com.unity.ugui@1.0.0
+The following packages were updated:
+  com.unity.2d.animation from version 3.2.4 to 3.2.6
+  com.unity.2d.pixel-perfect from version 2.0.4 to 2.1.0
+  com.unity.2d.psdimporter from version 2.1.5 to 2.1.6
+  com.unity.2d.spriteshape from version 3.0.13 to 3.0.14
