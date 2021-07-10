@@ -22,3 +22,11 @@ The following packages were updated:
   com.unity.timeline from version 1.0.0 to 1.2.6
 The following packages were removed:
   com.unity.package-manager-ui@2.1.1
+
+=== Fri Feb 12 16:36:51 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 업데이트됨:
+  com.unity.ads 3.5.2 버전에서 3.6.1버전으로  com.unity.test-framework 1.1.20 버전에서 1.1.22버전으로
