@@ -13,6 +13,8 @@ public class MonsterConrtoller : BaseController
 
     public override void Init()
     {
+
+        WorldObjectType = Define.WorldObject.Monster;
         _stat = gameObject.GetComponent<Stat>();
 
         if (gameObject.GetComponentInChildren<UI_HPBar>() == null)
@@ -21,11 +23,10 @@ public class MonsterConrtoller : BaseController
 
     protected override void UpdateIdle()
     {
-        Debug.Log("MonsterIdle");
-
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject player = Managers.Game.GetPlayer();
         if (player == null)
             return;
+
         float distance = (player.transform.position - transform.position).magnitude;
         if (distance <= _scanRange)
         {
@@ -91,7 +92,7 @@ public class MonsterConrtoller : BaseController
 
                 if (targetStat.Hp <= 0)
                 {
-                    GameObject.Destroy(targetStat.gameObject);    
+                    Managers.Game.Despawn(targetStat.gameObject);    
                 }
 
                 if (targetStat.Hp > 0)

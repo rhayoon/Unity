@@ -14,7 +14,9 @@ public class Managers : MonoBehaviour
     SceneMansgerEx _scene = new SceneMansgerEx();
     SoundManager _sound = new SoundManager();
     UIManager _ui = new UIManager();
+    GameManager _game = new GameManager();
 
+    public static GameManager Game { get { return Instance._game; } }
     public static DataManager Data { get { return Instance._data; } }
     public static InputManager Input { get { return Instance._input; } }
     public static PoolManager Pool { get { return Instance._pool; } }
